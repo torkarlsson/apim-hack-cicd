@@ -1,5 +1,5 @@
 param name string
-param location string = resourceGroup().location
+param location string = 'westus3'
 param dockerimagetag string
 param apidefinitionurl string = '' 
 
