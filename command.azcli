@@ -1,0 +1,7 @@
+# challenge 3
+
+az storage blob upload -f .\swapi-swagger.json --account-name stgtorkarhack -c swapi
+
+az deployment group create -g rg-torkar -f .\infrastructure\swapi.bicep -p name=torkar
+
+# 
