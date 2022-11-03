@@ -13,6 +13,8 @@ namespace CustomerAPI.Services
         Task<IEnumerable<Customer>> GetCustomers();
 
         Task<Customer> GetCustomer(Guid customerId);
+        
+        Task<Customer> GetCustomerByEmail(string email);
 
         void CreateCustomer(Customer customer);
 
