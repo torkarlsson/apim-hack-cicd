@@ -1,10 +1,12 @@
 # Challenge 1: Setup the environment
 
 You will use Bicep to deploy the Azure services that you will work with. Bicep is a declarative language that sits on top of Azure Resource Manager (ARM). There are many similarities to Terraform but one big difference is that it doesn't require any state management.
-You also need to add GitHub secrets that will be used in later challenges.    
+You also need to add GitHub secrets that will be used in later challenges. 
+
+The following image illustrates the steps in this challenge
 <br>
 
-  ![Azure services](img/services.png)
+  ![Azure services](img/ch1-overview.png)
 
 <br>
 
@@ -35,6 +37,7 @@ You also need to add GitHub secrets that will be used in later challenges.
 
 - [How to deploy resources with Bicep and Azure CLI](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deploy-cli)
 - [GitHub secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets)
+- [Strong Passwords - Azure SQL](https://learn.microsoft.com/en-us/sql/relational-databases/security/strong-passwords?view=sql-server-ver16)
 
 ## Solution
 - View the solution here, [Challenge 1 - Solution](solution1.md) 
@@ -47,3 +50,4 @@ You also need to add GitHub secrets that will be used in later challenges.
 * [Challenge 4: Create a CI/CD GitHub Action and deploy to Container Apps](challenge4.md)
 * [Challenge 5: Use the CI/CD GitHub Action to deploy changes to APIM](challenge5.md)
 * [Challenge 6: Add a policy using Bicep](challenge6.md)
+* [Challenge 7: Managing Development/Production environments.](challenge7.md)

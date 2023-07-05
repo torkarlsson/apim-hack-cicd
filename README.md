@@ -1,6 +1,12 @@
 # Azure API Management CI/CD hack with GitHub
 
-The hackathon uses GitHub Actions to create a complete CI/CD workflow for APIs deployed in Azure API Management. Bicep is used to setup the Azure services that is being used. The following services are being used: 
+The hackathon uses GitHub Actions to create a complete CI/CD workflow for APIs deployed in Azure API Management. 
+
+The following image illustrates the conceputal architecture.
+
+  ![Conceptual architecture](docs/img/conceptual-architecture.png)
+
+Bicep is used to setup the Azure services that is being used. The following services are being used: 
 * Azure API Management (consumption)
 * Azure Container Apps
 * Azure SQL Database (serverless)
@@ -9,8 +15,10 @@ The hackathon uses GitHub Actions to create a complete CI/CD workflow for APIs d
 * Azure Key vault
 * Azure Container Registry  
 * Storage account
- 
-  ![Azure services](docs/img/services.png)
+
+Once this hackathon is completed you should have an Architecture that looks something like the diagram below.
+
+  ![Azure services](docs/img/architecture.png)
 
 
 ## Target audience
@@ -24,11 +32,12 @@ This hackathon is directed towards developers that want to learn how to setup a 
 - Azure subscription with RBAC Owner role or a resourcegroup with RBAC Owner role. If the later is used the resourcegroup naming convention must be "rg-[six letters]" e.g. "rg-majnor". 
 - A Service principal with RBAC Owner role on the resourcegroup to be used.   
 - VS Code installed locally with the extensions "Bicep" and "REST Client".
-- Latest version of Azure CLI installed.   
+- Latest version of Azure CLI installed. 
+- A GitHub account is needed.   
 
 ## Getting started
 
-* This repo needs to be forked and cloned to to use it locally, see more [here](https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository)  
+* This repo needs to be **forked and cloned** to to use it locally, see more [here](https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository)  
 
 ### Fork and clone the repository
 
@@ -85,9 +94,9 @@ The hackathon is divided into six challenges. Each challenge consist of the foll
 * [Challenge 4: Create a CI/CD Github Action and deploy to Container Apps](docs/challenge4.md)
 * [Challenge 5: Use the CI/CD Github Action to deploy changes to APIM](docs/challenge5.md)
 * [Challenge 6: Add a policy using Bicep](docs/challenge6.md)
+* [Challenge 7: Managing Development/Production environments.](docs/challenge7.md)
+* TODO : Challenge 8: Using APIM to validate JWT tokens in a OAuth2 scenario.
 
-* TODO : Challenge 7: Using APIM to validate JWT tokens in a OAuth2 scenario.
-* TODO : Challenge 8: Managing Development/Production environments. 
 
 
 

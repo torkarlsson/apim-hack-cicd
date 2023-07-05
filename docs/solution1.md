@@ -3,11 +3,24 @@
 ## Solution steps
 
 To setup the environment you will use Azure CLI from VS Code.
-Either use a Service Principal or a user that has Owner rights on the subscription. The owner RBAC is required because you will create a User Assigned Managed Identity and apply role assignments to the identity. 
+Either use a Service Principal or a user that has Owner rights on the subscription. The owner RBAC is required because you will create a User Assigned Managed Identity and apply role assignments to the identity.
+
+> **Note**
+> You may run the deployment steps as a user with Owner rights but a Service Principal is still required when configuring the GitHub Actions.
+> 
 
 
 ### Login to Azure 
 <br>
+
+Open the cloned folder in VS Code and use a Terminal in VS Code for all the Azure CLI commands.  
+
+> **Note**
+> 
+> If you are using bash you need to use single quotes '' for app-id, password and tenant. 
+>
+
+
 Login to Azure using a Service Principal
 
 ```shell
@@ -37,6 +50,12 @@ az account show
 ### Create a resourcegroup
 <br>
 Create a resourcegroup using Azure CLI. Choose a six letters that will be used through the hackathon, it will be a postfix for all service names. For example, use you first three letters of your firstname and lastname. e.g "John Doe" --> johdoe. 
+
+<br>
+
+Important, use only small caps for your postfix.
+
+<br>
 
 All services will be created in North Europe datacenter region. If you prefer another region make sure all services are available there. 
 
@@ -124,3 +143,4 @@ The result should look like this.
 * [Challenge 4: Create a CI/CD GitHub Action and deploy to Container Apps](challenge4.md)
 * [Challenge 5: Use the CI/CD GitHub Action to deploy changes to APIM](challenge5.md)
 * [Challenge 6: Add a policy using Bicep](challenge6.md)
+* [Challenge 7: Managing Development/Production environments.](challenge7.md)
